@@ -1,1 +1,20 @@
+PART 4:
+3.SELECT * FROM players
+5.SELECT position FROM players
+7.SELECT first_name FROM players WHERE id = 2
+9.SELECT first_name FROM players WHERE position = "QB"
 
+PART 5:
+SELECT * FROM players WHERE first_name = "Richard";
+UPDATE players SET position="QB" WHERE first_name = "Richard";
+SELECT * FROM players WHERE first_name = "Richard";
+
+PART 6:
+SELECT * FROM players WHERE first_name = "Richard";
+DELETE FROM players WHERE first_name = "Richard";
+SELECT * FROM players WHERE first_name = "Richard";
+
+CHALLENGE:
+SELECT divisions.division_name, teams.team_name, players.first_name FROM players
+JOIN teams ON teams.team_id=players.team_id
+JOIN divisions ON divisions.division_id=teams.division_id
